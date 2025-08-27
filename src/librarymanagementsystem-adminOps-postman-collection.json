@@ -1,0 +1,944 @@
+{
+  "info": {
+    "name": "librarymanagementsystem-adminops-service API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "getBranchStaffAssignment",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//branchstaffassignments/:branchStaffAssignmentId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchstaffassignments",
+            ":branchStaffAssignmentId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createBranchStaffAssignment",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"branchId\": \"ID\",\n  \"userId\": \"ID\",\n  \"role\": \"Enum\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//branchstaffassignments",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchstaffassignments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateBranchStaffAssignment",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"branchId\": \"ID\",\n  \"userId\": \"ID\",\n  \"role\": \"Enum\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//branchstaffassignments/:branchStaffAssignmentId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchstaffassignments",
+            ":branchStaffAssignmentId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteBranchStaffAssignment",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//branchstaffassignments/:branchStaffAssignmentId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchstaffassignments",
+            ":branchStaffAssignmentId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listBranchStaffAssignments",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//branchstaffassignments",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchstaffassignments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getIssueEscalation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//issueescalations/:issueEscalationId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "issueescalations",
+            ":issueEscalationId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createIssueEscalation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"branchId\": \"ID\",\n  \"assignedToUserId\": \"ID\",\n  \"status\": \"Enum\",\n  \"escalationType\": \"Enum\",\n  \"description\": \"Text\",\n  \"log\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//issueescalations",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "issueescalations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateIssueEscalation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"branchId\": \"ID\",\n  \"assignedToUserId\": \"ID\",\n  \"status\": \"Enum\",\n  \"escalationType\": \"Enum\",\n  \"description\": \"Text\",\n  \"log\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//issueescalations/:issueEscalationId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "issueescalations",
+            ":issueEscalationId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteIssueEscalation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//issueescalations/:issueEscalationId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "issueescalations",
+            ":issueEscalationId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listIssueEscalations",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//issueescalations",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "issueescalations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getMongoAdminConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//mongoadminconfigs/:mongoAdminConfigId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "mongoadminconfigs",
+            ":mongoAdminConfigId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createMongoAdminConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"configType\": \"Enum\",\n  \"targetObject\": \"String\",\n  \"configDetails\": \"Object\",\n  \"status\": \"Enum\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//mongoadminconfigs",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "mongoadminconfigs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateMongoAdminConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"configType\": \"Enum\",\n  \"targetObject\": \"String\",\n  \"configDetails\": \"Object\",\n  \"status\": \"Enum\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//mongoadminconfigs/:mongoAdminConfigId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "mongoadminconfigs",
+            ":mongoAdminConfigId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteMongoAdminConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//mongoadminconfigs/:mongoAdminConfigId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "mongoadminconfigs",
+            ":mongoAdminConfigId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listMongoAdminConfigs",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//mongoadminconfigs",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "mongoadminconfigs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getExternalNotificationConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//externalnotificationconfigs/:externalNotificationConfigId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "externalnotificationconfigs",
+            ":externalNotificationConfigId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createExternalNotificationConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"providerType\": \"Enum\",\n  \"name\": \"String\",\n  \"settings\": \"Object\",\n  \"status\": \"Enum\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//externalnotificationconfigs",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "externalnotificationconfigs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateExternalNotificationConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"providerType\": \"Enum\",\n  \"name\": \"String\",\n  \"settings\": \"Object\",\n  \"status\": \"Enum\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//externalnotificationconfigs/:externalNotificationConfigId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "externalnotificationconfigs",
+            ":externalNotificationConfigId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteExternalNotificationConfig",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//externalnotificationconfigs/:externalNotificationConfigId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "externalnotificationconfigs",
+            ":externalNotificationConfigId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listExternalNotificationConfigs",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//externalnotificationconfigs",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "externalnotificationconfigs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getSystemBackupAudit",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//systembackupaudits/:systemBackupAuditId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "systembackupaudits",
+            ":systemBackupAuditId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createSystemBackupAudit",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"Enum\",\n  \"config\": \"Object\",\n  \"status\": \"Enum\",\n  \"resultDetails\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//systembackupaudits",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "systembackupaudits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateSystemBackupAudit",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"Enum\",\n  \"config\": \"Object\",\n  \"status\": \"Enum\",\n  \"resultDetails\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//systembackupaudits/:systemBackupAuditId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "systembackupaudits",
+            ":systemBackupAuditId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteSystemBackupAudit",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//systembackupaudits/:systemBackupAuditId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "systembackupaudits",
+            ":systemBackupAuditId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listSystemBackupAudits",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//systembackupaudits",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "systembackupaudits"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getBranchPurchaseOrder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//branchpurchaseorders/:branchPurchaseOrderId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchpurchaseorders",
+            ":branchPurchaseOrderId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createBranchPurchaseOrder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"branchId\": \"ID\",\n  \"items\": \"Object\",\n  \"status\": \"Enum\",\n  \"approvedByUserId\": \"ID\",\n  \"approvalDate\": \"Date\",\n  \"note\": \"Text\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//branchpurchaseorders",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchpurchaseorders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateBranchPurchaseOrder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"items\": \"Object\",\n  \"status\": \"Enum\",\n  \"approvedByUserId\": \"ID\",\n  \"approvalDate\": \"Date\",\n  \"note\": \"Text\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//branchpurchaseorders/:branchPurchaseOrderId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchpurchaseorders",
+            ":branchPurchaseOrderId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteBranchPurchaseOrder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//branchpurchaseorders/:branchPurchaseOrderId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchpurchaseorders",
+            ":branchPurchaseOrderId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listBranchPurchaseOrders",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//branchpurchaseorders",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "branchpurchaseorders"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
